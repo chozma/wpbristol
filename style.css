@@ -43,8 +43,11 @@
 /* 20A. TABLET OPTIMISATION STARTS - 910px   */
 /* Size at which the menu becomes mobile/tablet optimised */
 @media screen and (max-width: 910px) {  
-    /*DEBUG CODE*/
     .site-branding {
         height: 75px;
+        padding-left: 80px;
+    }
+    .site-title {
+        margin-top: 10px;
     }
 }
