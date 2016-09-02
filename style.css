@@ -22,6 +22,8 @@
 /* 1. BASIC SET-UP */
 .site-branding {
    background: url('img/Wp-logo.png') no-repeat left center;
+   background-size: contain;
+   padding-left: 75px;
 }
 
 
