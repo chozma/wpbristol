@@ -11,19 +11,24 @@
  Text Domain:  twenty-sixteen-child
 */
 
-/* 1. BASIC SET-UP */
-/* 2. LAYOUT       */
-/* 3. PAGES        */
-/* 4. POSTS        */
-/* 5. MEET-UP      */
+/*0. GENERAL STYLES  */
+/* 1. HEADER         */
+/* 2. LAYOUT         */
+/* 3. PAGES          */
+/* 4. POSTS          */
+/* 5. MEET-UP        */
 
 /* 20. MEDIA QUERIES     */
 
-/* 1. BASIC SET-UP */
+/* 1. HEADER */
 .site-branding {
    background: url('img/Wp-logo.png') no-repeat left center;
    background-size: contain;
-   padding-left: 75px;
+   padding-left: 125px;
+   height: 100px;
+}
+.site-title {
+    margin-top: 25px;
 }
 
 
