@@ -19,6 +19,11 @@
 
 /* 20. MEDIA QUERIES     */
 
+/* 1. BASIC SET-UP */
+.site-branding {
+   background: url('img/Wp-logo.png') no-repeat left center;
+}
+
 
 /* 5. MEET-UP      */
 #meetup_oembed {
