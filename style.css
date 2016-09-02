@@ -20,3 +20,7 @@
 /* 20. MEDIA QUERIES     */
 
 
+/* 5. MEET-UP      */
+#meetup_oembed {
+   padding-bottom: 25px !important;
+}
