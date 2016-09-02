@@ -36,3 +36,15 @@
 #meetup_oembed {
    padding-bottom: 25px !important;
 }
+
+
+/* 20. MEDIA QUERIES     */
+
+/* 20A. TABLET OPTIMISATION STARTS - 910px   */
+/* Size at which the menu becomes mobile/tablet optimised */
+@media screen and (max-width: 910px) {  
+    /*DEBUG CODE*/
+    .site-branding {
+        height: 75px;
+    }
+}
