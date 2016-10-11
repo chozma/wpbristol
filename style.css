@@ -30,6 +30,9 @@
 .site-title {
     margin-top: 25px;
 }
+.site-header-main {
+    align-items: flex-end;
+}
 
 
 /* 5. MEET-UP      */
