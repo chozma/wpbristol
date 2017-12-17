@@ -1,0 +1,35 @@
+
+.svg-icon {
+    height: 1em;
+    transition: fill .5s ease-in-out;
+    width: 1em;
+}
+
+.icon-arrow {
+    @include rem(font-size, 20px);
+    fill: $secondary-color;
+    transform: rotate(90deg);
+}
+
+.icon-email-us {
+    @include rem(height, 22px);
+    @include rem(width, 30px);
+    @include rem(margin-left, 10px);
+    fill: $primary-color;
+}
+
+.icon-search {
+    @include rem(font-size, 19px);
+    fill: $secondary-color;
+}
+
+.icon-turn-off {
+    @include rem(font-size, 45px);
+    fill: $secondary-color;
+    opacity: 0.7;
+    transition: opacity .5s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,93 @@
+
+.search-sidebar {
+    @include rem(margin-bottom, 30px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-field {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.search-form {
+    @include rem(max-width, 293px);
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    label {
+        width: 100%;
+    }
+
+    button {
+        @include rem(padding, 5px 7px);
+        background-color: $white;
+        border-left: 3px solid $background-color;
+    }
+}
+
+.search-field,
+.search-submit {
+    border: 0;
+}
+
+.search-submit {
+    border-radius: 0;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $secondary-color;
+
+        .icon-search {
+            fill: $white;
+        }
+    }
+}
+
+.search-field {
+    @include rem(padding, 5px);
+}
+
+.search-icon-wrapper {
+    @include rem(padding, 0 7px);
+    align-items: center;
+    background-color: $white;
+    border-left: 2px solid $background-color;
+    display: flex;
+    height: 100%;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.search-icon {
+    @include rem(font-size, 20px);
+    height: 1em;
+    width: 1em;
+}
+
+.search-wrapper,
+.search-title,
+.search-summary p {
+    @include rem(padding-left, 24px);
+
+    @include breakpoint('small') {
+        @include rem(padding-left, 50px);
+    }
+}
+
+
+.search-wrapper {
+    .search-form {
+        border: 2px solid $background-color;
+    }
+}
+
+.search-title {
+    color: $secondary-color;
+    font-weight: 300;
+}

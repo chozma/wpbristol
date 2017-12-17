@@ -1,0 +1,39 @@
+
+.container-home {
+    @include rem(max-width, 1010px);
+    margin-top: 0;
+
+    section {
+        @include rem(margin-top, 33px);
+        flex-basis: 60%;
+    }
+
+    aside {
+        @include rem(margin, ($vertical-spacing-unit * 2) 0);
+        flex-basis: 36%;
+    }
+
+    img {
+        display: inline-block;
+        width: 49%;
+    }
+
+    @include breakpoint('medium') {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.home-images {
+    @include rem(padding-left, 24px);
+    @include rem(margin-bottom, 50px);
+
+    @include breakpoint('small') {
+        @include rem(padding-left, 50px);
+    }
+}
+
+.sidebar {
+    @include rem(padding, $vertical-spacing-unit);
+    background-color: $background-color;
+}

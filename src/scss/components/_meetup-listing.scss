@@ -1,0 +1,182 @@
+
+.meetup-listing-wrapper {
+    @include rem(margin-top, 50px);
+}
+
+.meetup-listing {
+    @include rem(max-width, 760px);
+    margin: 0 auto;
+
+    li {
+        @include rem(margin-bottom, ($vertical-spacing-unit * 2));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @include breakpoint('small') {
+            flex-direction: row;
+        }
+    }
+
+    .first-post {
+        display: none;
+    }
+}
+
+.meetup-listing-next-event {
+    &:before,
+    &:after {
+        @include rem(left, -15px);
+        position: absolute;
+    }
+
+    &:before {
+        @include rem(padding, 8px 20px);
+        @include rem(top, 15px);
+        background-color: $primary-color;
+        color: $white;
+        content: 'Next Event';
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &:after {
+        @include rem(top, 15px + 38px);
+        content: '';
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: transparent darken($primary-color, 20%) transparent transparent;
+        height: 0;
+        width: 0;
+    }
+
+    .meetup-listing-info {
+        border-color: $primary-color;
+        border-width: 0 2px 2px 2px;
+
+        @include breakpoint('small') {
+            border-width: 2px 2px 2px 0;
+        }
+    }
+}
+
+.meetup-listing-heading {
+    @include rem(margin, 45px 0);
+}
+
+.meetup-listing-text {
+    @include rem(margin-top, 20px);
+    @include rem(min-height, 55px);
+}
+
+.meetup-listing-info {
+    @include rem(padding, $vertical-spacing-unit);
+    border-style: solid;
+    border-color: $background-color;
+    border-width: 0 1px 1px 1px;
+    flex-basis: 60%;
+    position: relative;
+
+    &:before {
+         @include rem(top, -24px);
+        @include rem(left, 37px);
+        border-color: transparent transparent $white transparent;
+        border-style: solid;
+        border-width: 12px;
+        content: '';
+        display: block;
+        height: 0;
+        position: absolute;
+        width: 0;
+
+        @include breakpoint('small') {
+            @include rem(top, 24px);
+            @include rem(left, -24px);
+            border-color: transparent $white transparent transparent;
+        }
+    }
+
+    @include breakpoint('small') {
+        @include rem(padding, $vertical-spacing-unit $vertical-spacing-unit $vertical-spacing-unit 30px);
+        border-width: 1px 1px 1px 0;
+    }
+}
+
+.meetup-listing-header {
+    align-items: flex-start;
+    display: flex;
+}
+
+.meetup-listing-date {
+    @include rem(font-size, 30px);
+    @include rem(padding-right, ($vertical-spacing-unit / 2));
+    color: $primary-color;
+    display: inline-block;
+    font-family: $header-font;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+
+    span {
+        @include rem(font-size, 18px);
+        display: block;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        border-right: 2px solid $primary-color;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.meetup-listing-title {
+    @include rem(padding-left, ($vertical-spacing-unit / 2));
+    display: inline-block;
+    line-height: 1.1;
+
+    h4 {
+        @include rem(font-size, 20px);
+        margin: 0;
+
+        a {
+            color: $secondary-color;
+            font-weight: 400;
+        }
+
+        @include breakpoint('small') {
+            @include rem(font-size, map-get($typography, 'heading-four'));
+        }
+    }
+}
+
+.meetup-listing-image {
+    background-image: url(images/placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: '';
+    display: inline-block;
+    flex: 1;
+}
+
+.meetup-listing-text {
+    p {
+        margin-bottom: 0;
+        padding-left: 0;
+
+        @include breakpoint('small') {
+            @include rem(padding-left, 50px);
+        }
+    }
+}
+
+.meetup-listing-image-inner {
+    padding-bottom: 50%;
+
+    @include breakpoint('small') {
+        padding-bottom: 0;
+    }
+}

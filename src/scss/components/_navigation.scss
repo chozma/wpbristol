@@ -1,0 +1,98 @@
+
+.nav-wrapper {
+    @include rem(height, 50px);
+    align-items: center;
+    display: flex;
+    margin: 0 4%;
+
+    @include breakpoint('small') {
+        @include rem(padding, 15px 0);
+    }
+}
+
+.nav-toggle-wrapper {
+    @include rem(top, 15px);
+    position: absolute;
+    right: 4%;
+
+    @include breakpoint('small') {
+        display: none;
+    }
+}
+
+.top-navigation {
+    @include rem(font-size, 14px);
+    background-color: $white;
+    height: 100vh;
+    position: fixed;
+    left: -100%;
+    text-transform: uppercase;
+    top: 0;
+    transition: left .5s ease-in-out;
+    width: 100%;
+    z-index: 10;
+
+    &.is-opened {
+        left: 0;
+    }
+
+    a {
+        color: $secondary-color;
+    }
+
+    @include breakpoint('small') {
+        background-color: transparent;
+        position: relative;
+        height: auto;
+        left: 0;
+    }
+}
+
+.menu {
+    @include rem(padding, $vertical-spacing-unit 4%);
+
+    .current-menu-item {
+        &:before {
+            right: 0;
+        }
+    }
+
+    @include breakpoint('small') {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.menu-item {
+    @include rem(margin, $vertical-spacing-unit 0);
+    display: block;
+    position: relative;
+
+    @include breakpoint('small') {
+        @include rem(margin, 0 $vertical-spacing-unit 0 0);
+        display: inline-block;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            @include rem(height, 3px);
+            @include rem(bottom, -5px);
+            background: $primary-color;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 100%;
+            transition: right .4s ease-out;
+        }
+
+        &:hover,
+        &:active {
+            &:before {
+                right: 0;
+            }
+        }
+    }
+}

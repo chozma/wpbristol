@@ -1,0 +1,34 @@
+
+.footer {
+    margin-top: auto;
+}
+
+.footer-inner {
+    @include rem(padding, $vertical-spacing-unit  4%);
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint('medium') {
+        align-items: flex-end;
+        flex-direction: row;
+    }
+}
+
+.proudly-powered {
+    @include rem(font-size, 14px);
+    @include rem(margin-bottom, ($vertical-spacing-unit / 2));
+    text-align: center;
+
+    @include breakpoint('medium') {
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+.footer-homepage {
+    .footer-inner {
+        background-color: $white;
+    }
+}

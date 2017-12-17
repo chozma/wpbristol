@@ -1,2 +1,1 @@
-# wpbristol
-WordPress Bristol's website theme
+# WordPress Bristol theme

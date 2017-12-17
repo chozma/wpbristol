@@ -1,0 +1,105 @@
+//
+// Reusable column layout structures in Magento
+// using the Bourbon neat framework
+//
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    @include rem(max-width, 960px);
+    @include rem(margin, 33px auto);
+    padding: 0 4%;
+}
+
+.entry-content {
+    p {
+        @include rem(padding-left, 24px);
+
+        @include breakpoint('small') {
+            @include rem(padding-left, 50px);
+        }
+    }
+
+    h2:not(:first-child) {
+        @include rem(margin-top, ($vertical-spacing-unit * 2));
+    }
+}
+
+.about-text {
+    ul {
+        @include rem(padding-left, 24px);
+
+        @include breakpoint('small') {
+            @include rem(padding-left, 50px);
+        }
+    }
+}
+
+.entry-content {
+    @include clearfix();
+}
+
+
+// Single column layout by default given that elements are block level
+// Change layout for breakpoints
+.col2-set {
+    @include row();
+
+    @include breakpoint('small') {
+        .col-1,
+        .col-2 {
+            @include span-columns(6 of 12);
+        }
+    }
+}
+
+.col3-set {
+    @include row();
+
+    @include breakpoint('medium') {
+        .col-1,
+        .col-2,
+        .col-3 {
+            @include span-columns(4 of 12);
+        }
+    }
+}
+
+.col4-set {
+    @include row();
+
+    @include breakpoint('small') {
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4 {
+            @include span-columns(6 of 12);
+        }
+
+        .col-2,
+        .col-4 {
+            margin-right: 0;
+        }
+
+        .col-3 {
+            clear: both;
+        }
+    }
+
+    @include breakpoint('large') {
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4 {
+            @include span-columns(3 of 12);
+        }
+
+        .col-3 {
+            clear: none;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+
+    p {
+        @include rem(margin, 0 0 20px 0);
+    }
+}
+
+.trigger-icon {
+    transition: transform .5s ease-in-out;
+}
+
+.organiser-item {
+    &.active {
+        .accordion-content {
+            max-height: 500px;
+        }
+
+        .trigger-icon {
+            transform: rotate(180deg);
+        }
+    }
+}
