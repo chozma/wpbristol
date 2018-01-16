@@ -19,6 +19,7 @@
                 <?php bloginfo( 'name' ); ?> | Powered by <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'custom-theme' ) ); ?>"><?php
                 /* translators: %s: CMS name, i.e. WordPress. */
                 printf( esc_html__( '%s', 'custom-theme' ), 'WordPress' ); ?></a>
+                <div class="footer-credits">Site by <a href="http://www.pixelsandbeyond.io/" target="_blank">Pixels & Beyond</a></div>
             </span>
             <div class="social-media-wrapper">
                 <ul class="social-media">

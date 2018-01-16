@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     stylelint = require("stylelint"),
     scssParser = require('postcss-scss'),
     cleanCSS = require('gulp-clean-css'),
-    uglify = require('gulp-uglify')
+    uglify = require('gulp-uglify'),
     pump = require('pump'),
     path = require('path');
 

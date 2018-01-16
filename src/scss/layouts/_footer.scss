@@ -4,21 +4,21 @@
 }
 
 .footer-inner {
-    @include rem(padding, $vertical-spacing-unit  4%);
+    @include rem(padding, ($vertical-spacing-unit * 2)  4%);
     background-color: $background-color;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @include breakpoint('medium') {
-        align-items: flex-end;
+        align-items: flex-start;
         flex-direction: row;
     }
 }
 
 .proudly-powered {
     @include rem(font-size, 14px);
-    @include rem(margin-bottom, ($vertical-spacing-unit / 2));
+    @include rem(margin-bottom, $vertical-spacing-unit);
     text-align: center;
 
     @include breakpoint('medium') {
@@ -30,5 +30,14 @@
 .footer-homepage {
     .footer-inner {
         background-color: $white;
+    }
+}
+
+.footer-credits {
+    @include rem(font-size, 13px);
+    @include rem(margin-top, 6px);
+
+    a {
+        font-weight: 400;
     }
 }
