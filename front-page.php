@@ -59,7 +59,7 @@ get_header(); ?>
                     <div class="sponsor">
                         <a href="https://developme.training/" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/developme.svg" alt="Developme"></a>
                         <?php the_field('sponsor_two'); ?>
-                        <p>Develop Me are a Bristol based tech training company. They run a variety of training courses including a 12-week full-time developers bootcamp and day long courses covering topics like WordPress and design skills.</p>
+                        <p>DevelopMe_ are a talent and digital skills accelerator. Their core learning programmes are a 12-week Web Developer Bootcamp, 12 week UX Design Bootcamp, Part-time Front-End course & one day tech skills workshops (including a few WordPress focused ones).</p>
                     </div>
                 </div>
             </div>
