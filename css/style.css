@@ -1741,6 +1741,7 @@ em {
 .sponsors-title {
   margin-bottom: 1.25rem;
   display: inline-block;
+  font-weight: bold;
 }
 
 @media (min-width: 48.125rem) {
@@ -1769,12 +1770,26 @@ em {
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
     margin-bottom: 0;
+    padding-right: 1rem;
+  }
+  .sponsor a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 6.875rem;
   }
 }
 
 .sponsor-logo {
   max-height: 2.25rem;
   height: 100%;
+}
+
+.stickermule .sponsor-logo {
+  max-height: 6.25rem;
 }
 
 .meetup-single-title {

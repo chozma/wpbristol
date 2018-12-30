@@ -49,17 +49,19 @@ get_header(); ?>
                 <?php get_sidebar('home'); ?>
             </div>
             <div class="sponsors">
-                <span class="sponsors-title">Proudly sponsored by</span>
+                <span class="sponsors-title">Sponsored by</span>
                 <div class="sponsor-content">
                     <div class="sponsor">
                         <a href="https://www.34sp.com/wordpress-hosting" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/34sp.svg" alt="34sp.com"></a>
-                        <?php the_field('sponsor_one'); ?>
                         <p>34SP provide excellent WordPress hosting and amazing support. On top of that our members receive a discount code which gives them three months of free hosting, which you can cancel at any time (no getting sucked into a twelve month contract if you don’t want). The code is WPBRUG.</p>
                     </div>
                     <div class="sponsor">
                         <a href="https://developme.training/" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/developme.svg" alt="Developme"></a>
-                        <?php the_field('sponsor_two'); ?>
                         <p>DevelopMe_ are a talent and digital skills accelerator. Their core learning programmes are a 12-week Web Developer Bootcamp, 12 week UX Design Bootcamp, Part-time Front-End course & one day tech skills workshops (including a few WordPress focused ones).</p>
+                    </div>
+					<div class="sponsor stickermule">
+                        <a href="https://www.stickermule.com/uk?utm_source=sponsorship&utm_medium=referral&utm_campaign=WPMBristol" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/stickermule.png" alt="Sticker Mule"></a>
+                        <p>Sticker Mule is the fastest and easiest way to buy custom printed products. Thousands of people trust us to make kick-ass stickers, labels, magnets, badges & more. Order in seconds and get free online proofs, free shipping, and super fast turnaround!</p>
                     </div>
                 </div>
             </div>

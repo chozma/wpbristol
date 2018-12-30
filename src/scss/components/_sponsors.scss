@@ -6,7 +6,8 @@
 
 .sponsors-title {
     @include rem(margin-bottom, $vertical-spacing-unit);
-    display: inline-block;
+	display: inline-block;
+	font-weight: bold;
 }
 
 .sponsor-content {
@@ -29,11 +30,24 @@
 
     @include breakpoint('medium') {
         flex-basis: 48%;
-        margin-bottom: 0;
-    }
+		margin-bottom: 0;
+		@include rem(padding-right, 16px);
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include rem(height, 110px);
+		}
+	}
 }
 
 .sponsor-logo {
     @include rem(max-height, 36px);
     height: 100%;
 }
+
+.stickermule .sponsor-logo {
+	@include rem(max-height, 100px);
+}
+
