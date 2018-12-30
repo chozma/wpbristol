@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     plugins = require('gulp-load-plugins')(),
-    pngquant = require('imagemin-pngquant'),
+    //pngquant = require('imagemin-pngquant'),
     browserSync = require('browser-sync'),
     sassdoc = require('sassdoc'),
     fs = require('fs'),
@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     scssParser = require('postcss-scss'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    pump = require('pump'),
+    //pump = require('pump'),
     path = require('path');
 
 var PATHS = {
@@ -56,8 +56,8 @@ var onError = function (error) {
 
 gulp.task('default', ['sass', 'sasslint', 'browser-sync', 'images', 'minify-css'], function () {
     gulp.watch(PATHS.sass.src + '**/*.scss', ['sass', 'sasslint']);
-    gulp.watch(PATHS.images.templatedir + '**/*', ['imagemin']);
-    gulp.watch(PATHS.images.spritesdir + '**/*', ['sprite']);
+    // gulp.watch(PATHS.images.templatedir + '**/*', ['imagemin']);
+    // gulp.watch(PATHS.images.spritesdir + '**/*', ['sprite']);
     gulp.watch(PATHS.css.src + '*.css', ['minify-css']);
 
 });
