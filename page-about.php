@@ -31,6 +31,7 @@ get_header(); ?>
                             'post_type'      => 'wpbristol_organisers',
                             'post_status'    => 'publish',
                             'paged' => $paged,
+                            'posts_per_page' => 10,
                             );
 
                         $loop = new WP_Query( $args ); ?>
