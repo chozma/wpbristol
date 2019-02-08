@@ -6,7 +6,7 @@
             <div class="meetup-list-date meetup-next-date"><?php the_field('event_date'); ?></div>
             <div>
                 <a href="<?php the_permalink(); ?>" class="meetup-next-title"><?php the_title(); ?></a>
-                <div class="meetup-next-place">at Famous Royal Navy Volunteer</div>
+                <div class="meetup-next-place">at Runway East, Bristol</div>
             </div>
         </div>
         <?php the_content(); ?>
