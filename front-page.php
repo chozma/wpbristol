@@ -56,8 +56,8 @@ get_header(); ?>
                         <p>34SP provide excellent WordPress hosting and amazing support. On top of that our members receive a discount code which gives them three months of free hosting, which you can cancel at any time (no getting sucked into a twelve month contract if you don’t want). The code is WPBRUG.</p>
                     </div>
                     <div class="sponsor">
-                        <a href="https://developme.training/" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/developme.svg" alt="Developme"></a>
-                        <p>DevelopMe_ are a talent and digital skills accelerator. Their core learning programmes are a 12-week Web Developer Bootcamp, 12 week UX Design Bootcamp, Part-time Front-End course & one day tech skills workshops (including a few WordPress focused ones).</p>
+                        <a href="https://www.atomicsmash.co.uk/" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/Atomic-Smash-logo.jpg" alt="Atomic Smash logo"></a>
+                        <p>Atomic Smash focus on delivering enterprise level WordPress & WooCommerce solutions for an array of businesses and organisations. Working on a range of projects, across the spectrum of UX, Design & Development.</p>
                     </div>
 					<div class="sponsor stickermule">
                         <a href="https://www.stickermule.com/uk?utm_source=sponsorship&utm_medium=referral&utm_campaign=WPMBristol" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/stickermule.png" alt="Sticker Mule"></a>
