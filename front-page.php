@@ -55,7 +55,7 @@ get_header(); ?>
                         <a href="https://www.34sp.com/wordpress-hosting" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/34sp.svg" alt="34sp.com"></a>
                         <p>34SP provide excellent WordPress hosting and amazing support. On top of that our members receive a discount code which gives them three months of free hosting, which you can cancel at any time (no getting sucked into a twelve month contract if you don’t want). The code is WPBRUG.</p>
                     </div>
-                    <div class="sponsor">
+                    <div class="sponsor atomicsmash">
                         <a href="https://www.atomicsmash.co.uk/" target="_blank"><img class="sponsor-logo" src="<?php bloginfo('template_url'); ?>/images/Atomic-Smash-logo.jpg" alt="Atomic Smash logo"></a>
                         <p>Atomic Smash focus on delivering enterprise level WordPress & WooCommerce solutions for an array of businesses and organisations. Working on a range of projects, across the spectrum of UX, Design & Development.</p>
                     </div>

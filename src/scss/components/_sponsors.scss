@@ -51,3 +51,7 @@
 	@include rem(max-height, 100px);
 }
 
+.atomicsmash .sponsor-logo {
+	@include rem(max-height, 60px);
+}
+
